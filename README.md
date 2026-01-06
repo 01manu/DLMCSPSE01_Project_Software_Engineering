@@ -157,5 +157,6 @@ JWT_SECRET_KEY=change_this_to_a_strong_secret
 1) Start databases using Docker Compose
 
 From project root (farm2kitchen/):
+```env
 docker compose up -d
 
