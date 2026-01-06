@@ -157,6 +157,7 @@ JWT_SECRET_KEY=change_this_to_a_strong_secret
 1) Start databases using Docker Compose
 
 From project root (farm2kitchen/):
+
 ```env
 docker compose up -d
 ```
@@ -171,8 +172,11 @@ You should see:
 2) Run Backend (Flask)
 
 Open terminal in:
+
 ```env
+
 cd backend
+
 ```
 Create venv (first time only):
 ```env
@@ -194,4 +198,29 @@ pip install -r requirements.txt
 Initialize DB tables:
 ```env
 flask --app app.py init-db
+
+```
+Run backend:
+
+```env
+python app.py
+
+```
+Backend runs at:
+
+- http://127.0.0.1:5000
+
+Health endpoint:
+
+- http://127.0.0.1:5000/health
+
+```
+3) Run Frontend (React)
+
+Open terminal in:
+
+```env
+
+cd frontend
+
 
