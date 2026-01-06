@@ -1,6 +1,3 @@
-# DLMCSPSE01_Project_Software_Engineering
-
-
 # Farm2Kitchen 🌱🚜 (DLMCSPSE01 – Software Engineering Project)
 
 Farm2Kitchen is a full-stack web application that supports **sustainable local food supply chains** by connecting **Farmers** and **Consumers** through a subscription-based ordering workflow. The system includes **AI-like demand forecasting**, **eco-impact tracking**, **gamification**, and **QR-code traceability**.
