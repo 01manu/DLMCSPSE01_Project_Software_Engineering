@@ -150,3 +150,6 @@ Example:
 ```env
 DATABASE_URL=postgresql://postgres:postgres@localhost:5432/farm2kitchen
 JWT_SECRET_KEY=change_this_to_a_strong_secret
+
+---
+Hojjkj
