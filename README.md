@@ -33,4 +33,132 @@ Each sprint will last two weeks and deliver a potentially usable feature. Roles 
 •	Rewards Engine
 •	Trace & Impact Tracker
 
-"C:\Users\MANOJ\Videos\Screen Recordings\Screen Recording 2026-01-06 221232.mp4"
+# Farm2Kitchen 🌱🚜 (DLMCSPSE01 – Software Engineering Project)
+
+Farm2Kitchen is a full-stack web application that supports **sustainable local food supply chains** by connecting **Farmers** and **Consumers** through a subscription-based ordering workflow. The system includes **AI-like demand forecasting**, **eco-impact tracking**, **gamification**, and **QR-code traceability**.
+
+---
+
+## ✅ Key Features
+
+### Authentication & Roles (FR1)
+- JWT-based login and registration
+- Role-based access control:
+  - **FARMER**
+  - **CONSUMER**
+
+### Farmer Module (FR2)
+- Create / update / delete products
+- Stock management (available quantity)
+- View only their own products
+- Forecast dashboard for demand prediction (all products)
+
+### Consumer Module (FR3)
+- Browse available products
+- Add products to **Subscription Box**
+- Update quantities / remove items from box
+- Checkout subscription and create orders
+- View order history
+
+### Forecasting (FR4)
+- AI-like heuristic forecast model (prototype-level ML behaviour)
+- Forecast per product and forecast dashboard for all products
+
+### Eco-Impact Tracking (FR5)
+- Calculates sustainability metrics:
+  - CO₂ reduction
+  - distance saved
+  - eco-score
+- Shows metrics in dashboards
+
+### Gamification (FR6)
+- Calculates points from actions + eco score
+- Assigns badges (Eco Beginner, Eco Supporter, Eco Hero)
+- Visible in Consumer dashboard
+
+### QR Traceability (FR7)
+- Generate QR code for a product trace link
+- Trace endpoint returns product + farmer + eco summary + forecast summary + QR data (base64)
+
+### Docker Deployment (NFR / Deployment)
+- Docker Compose provisions:
+  - PostgreSQL (primary DB)
+  - MongoDB (optional, reserved for logs/analytics)
+
+---
+
+## 🧱 Tech Stack
+
+**Frontend**
+- React (Vite)
+- React Router DOM
+- Tailwind CSS (UI styling)
+
+**Backend**
+- Python Flask
+- Flask-SQLAlchemy
+- Flask-JWT-Extended
+- Flask-CORS
+- python-dotenv
+
+**Database**
+- PostgreSQL (core relational data)
+- MongoDB (optional placeholder for analytics/logs)
+
+**Deployment**
+- Docker + Docker Compose
+
+---
+
+## 📁 Project Structure
+
+farm2kitchen/
+backend/
+app.py
+requirements.txt
+.env (local only, not committed)
+venv/ (local only)
+frontend/
+src/
+pages/
+components/
+App.jsx
+main.jsx
+package.json
+docker-compose.yml
+
+
+---
+
+## ⚙️ Prerequisites
+
+Install these before running:
+
+- Python 3.11+
+- Node.js (LTS recommended)
+- Docker Desktop (Windows/Mac) or Docker Engine (Linux)
+- Git
+
+---
+
+## 🔐 Environment Variables (Backend)
+
+Create a file: `backend/.env`
+
+Example:
+
+```env
+DATABASE_URL=postgresql://postgres:postgres@localhost:5432/farm2kitchen
+JWT_SECRET_KEY=change_this_to_a_strong_secret
+
+🚀 How to Run the Project
+✅ Option A (Recommended): Run with Docker + Local Flask + Local React
+1) Start databases using Docker Compose
+
+From project root (farm2kitchen/):
+docker compose up -d
+Check containers:
+docker ps
+You should see:
+farm2kitchen_postgres
+farm2kitchen_mongo (optional)
