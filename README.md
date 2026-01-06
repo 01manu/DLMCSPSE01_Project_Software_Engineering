@@ -152,4 +152,10 @@ DATABASE_URL=postgresql://postgres:postgres@localhost:5432/farm2kitchen
 JWT_SECRET_KEY=change_this_to_a_strong_secret
 
 ````
-Hojjkj
+🚀 How to Run the Project
+✅ Option A (Recommended): Run with Docker + Local Flask + Local React
+1) Start databases using Docker Compose
+
+From project root (farm2kitchen/):
+docker compose up -d
+
