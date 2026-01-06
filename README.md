@@ -170,7 +170,7 @@ You should see:
 - farm2kitchen_mongo (optional)
 ```
 2) Run Backend (Flask)
-
+```
 Open terminal in:
 
 ```env
@@ -223,5 +223,60 @@ Open terminal in:
 ```env
 
 cd frontend
+```
+Install dependencies:
+```env
+npm install
+```
+Run dev server:
+```env
+npm run dev
+```
+Frontend runs at:
 
+- http://localhost:5173
+```
+✅ Option B: Run without Docker (Local PostgreSQL)
+```
+1. Install PostgreSQL locally
 
+2. Create a database (example): farm2kitchen
+
+3. Update backend/.env with your local DB credentials
+
+4. Run backend + frontend using the same commands as above
+
+````
+🔑 Default Workflow (How the System Works)
+```
+1. Farmer Flow
+
+2. Register as FARMER
+
+3. Login → receives JWT token
+
+4. Create products with stock and price
+
+5. View products list
+
+6. Open forecast dashboard → view predicted demand for all products
+```
+Use QR traceability (share trace link)
+```
+1. Consumer Flow
+
+2.Register as CONSUMER
+
+3.Login → receives JWT token
+
+4. Browse products
+
+5. Add products to subscription box
+
+6. Update/remove items in box
+
+7. Checkout → creates an order
+
+8. View orders history
+
+9. See eco-impact + gamification score in dashboard
