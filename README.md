@@ -216,6 +216,7 @@ Health endpoint:
 
 ```
 3) Run Frontend (React)
+```
 
 Open terminal in:
 
