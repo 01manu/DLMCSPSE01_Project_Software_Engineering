@@ -159,4 +159,39 @@ JWT_SECRET_KEY=change_this_to_a_strong_secret
 From project root (farm2kitchen/):
 ```env
 docker compose up -d
+```
+Check containers:
+```env
+docker ps
+````
+You should see:
+- farm2kitchen_postgres
+- farm2kitchen_mongo (optional)
+```
+2) Run Backend (Flask)
+
+Open terminal in:
+```env
+cd backend
+```
+Create venv (first time only):
+```env
+python -m venv venv
+
+```
+Activate venv:
+
+Windows (PowerShell):
+```env
+venv\Scripts\Activate
+
+```
+Install dependencies:
+```env
+pip install -r requirements.txt
+
+```
+Initialize DB tables:
+```env
+flask --app app.py init-db
 
