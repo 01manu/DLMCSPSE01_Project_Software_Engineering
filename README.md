@@ -1,11 +1,11 @@
-# Farm2Kitchen 🌱🚜 (DLMCSPSE01 – Software Engineering Project)
+# Farm2Kitchen 🌱 (DLMCSPSE01 – Software Engineering Project)
 
 Farm2Kitchen is a full-stack web application that supports **sustainable local food supply chains** by connecting **Farmers** and **Consumers** through a subscription-based ordering workflow. The system includes **AI-like demand forecasting**, **eco-impact tracking**, **gamification**, and **QR-code traceability**.
 
 
 ---
 
-## ✅ Key Features
+## Key Features
 
 ### Authentication & Roles (FR1)
 - JWT-based login and registration
@@ -53,7 +53,7 @@ Farm2Kitchen is a full-stack web application that supports **sustainable local f
 
 ---
 
-## 🧱 Tech Stack
+## Tech Stack
 
 **Frontend**
 - React (Vite)
@@ -96,7 +96,7 @@ docker-compose.yml
 
 ---
 
-## ⚙️ Prerequisites
+## Prerequisites
 
 Install these before running:
 
@@ -107,7 +107,7 @@ Install these before running:
 
 ---
 
-## 🔐 Environment Variables (Backend)
+## Environment Variables (Backend)
 
 Create a file: `backend/.env`
 
@@ -119,7 +119,7 @@ JWT_SECRET_KEY=change_this_to_a_strong_secret
 
 ````
 🚀 How to Run the Project
-✅ Option A (Recommended): Run with Docker + Local Flask + Local React
+ Option A (Recommended): Run with Docker + Local Flask + Local React
 1) Start databases using Docker Compose
 
 From project root (farm2kitchen/):
