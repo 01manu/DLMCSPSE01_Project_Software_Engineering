@@ -204,7 +204,7 @@ npm run dev
 Frontend runs at:
 
 - http://localhost:5173
-```
+````
 ##✅ Option B: Run without Docker (Local PostgreSQL)
 ```
 1. Install PostgreSQL locally
