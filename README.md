@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/f3960f0f-d7b3-453d-9131-3965c8661a0c
+
 # Farm2Kitchen 🌱 (DLMCSPSE01 – Software Engineering Project)
 
 Farm2Kitchen is a full-stack web application that supports **sustainable local food supply chains** by connecting **Farmers** and **Consumers** through a subscription-based ordering workflow. The system includes **AI-like demand forecasting**, **eco-impact tracking**, **gamification**, and **QR-code traceability**.
